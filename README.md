@@ -1,17 +1,34 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+Dec. 21, 2021
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project 
 
 ### Description
-Describe what your project is about and what it does
+Built an interactive program that analyzes bikeshare data in Python. 
+
+### Cities
+* Chicago 
+* New York City
+* Washington
+
+### Column Descriptions
+* ID: identification number of the trip
+* Start Time: time the trip started (yyyy-mm-dd hh:mm:ss)
+* End Time: time the trip ended (yyyy-mm-dd hh:mm:ss)
+* Trip Duration: difference between start time and end time measured in seconds 
+* Start Station: beginning station
+* End Station: end station
+* User Type: differentiates between subscribers and customers
+* Gender: male or female (not provided for Washington)
+* Birth Year:  birth year of the rider (not provided for Washington)
 
 ### Files used
-Include the files used
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity Python for Data Science Nanodegree
 

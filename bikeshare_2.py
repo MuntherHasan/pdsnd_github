@@ -23,13 +23,12 @@ def get_filters():
                         'Friday', 'Saturday', 'Sunday']
     correct_city = True
     while correct_city:
-        city = input('Would you like to see data for Chicago, New York City or Washington?\n')
-        city = city.lower()
+        city = input('Would you like to see data for Chicago, New York City or Washington?\n').lower()       
         #get user input for month & day
         if city in CITY_DATA:
             correct_city = False
             time_filter = input('Would you like to filter data by month, '+
-            'day, both, or not at all? Type "none" for no time filter.\n')
+            'day, both, or not at all? Type "none" for no time filter.\n').lower()
             #handling incorrect month input if month filter is chosen
             if time_filter == 'month': 
                 month = input('Which month? January, February, March, April, May or June?\n').title()
@@ -184,8 +183,7 @@ def user_stats(df, city):
     if city != 'washington':
         print("\nGender Breakdown:")
         gender_count = df['Gender'].value_counts()
-        print("Male: "+ str(gender_count['Male'])+ 
-        "\nFemale: "+str(gender_count['Female']))
+        print("Male: {} \nFemale: {}".format(str(gender_count['Male']), str(gender_count['Female'])))
 
         # Display earliest, most recent, and most common year of birth
         print("\nBirth Year Breakdown:")
