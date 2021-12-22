@@ -183,8 +183,7 @@ def user_stats(df, city):
     if city != 'washington':
         print("\nGender Breakdown:")
         gender_count = df['Gender'].value_counts()
-        print("Male: "+ str(gender_count['Male'])+ 
-        "\nFemale: "+str(gender_count['Female']))
+        print("Male: {} \nFemale: {}".format(str(gender_count['Male']), str(gender_count['Female'])))
 
         # Display earliest, most recent, and most common year of birth
         print("\nBirth Year Breakdown:")
