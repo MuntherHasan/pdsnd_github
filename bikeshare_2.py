@@ -28,7 +28,7 @@ def get_filters():
         if city in CITY_DATA:
             correct_city = False
             time_filter = input('Would you like to filter data by month, '+
-            'day, both, or not at all? Type "none" for no time filter.\n')
+            'day, both, or not at all? Type "none" for no time filter.\n').lower()
             #handling incorrect month input if month filter is chosen
             if time_filter == 'month': 
                 month = input('Which month? January, February, March, April, May or June?\n').title()
