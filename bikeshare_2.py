@@ -23,8 +23,7 @@ def get_filters():
                         'Friday', 'Saturday', 'Sunday']
     correct_city = True
     while correct_city:
-        city = input('Would you like to see data for Chicago, New York City or Washington?\n')
-        city = city.lower()
+        city = input('Would you like to see data for Chicago, New York City or Washington?\n').lower()       
         #get user input for month & day
         if city in CITY_DATA:
             correct_city = False
